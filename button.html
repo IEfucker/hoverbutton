@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hover button form nycc</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contain {
+        padding: 20px;
+    }
+    
+    .btn {
+        position: relative;
+        padding: 10px 20px;
+        height: 60px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+        font-family: "MicroSoft YaHei", sans-serif;
+    }
+    
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        z-index: -1;
+        box-shadow: inset 0 0 0 35px #0d47a1;
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+    
+    .btn:hover {
+        color: #0d47a1;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    
+    .btn:hover::before {
+        transform: scale3d(1, 1, 1);
+        box-shadow: inset 0 0 0 2px #0d47a1;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <a href="#" class="btn">button form nycc</a>
+    </div>
+</body>
+
+</html>
